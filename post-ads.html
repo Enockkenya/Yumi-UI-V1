@@ -123,7 +123,7 @@
       <div class="container">
         <div class="row">         
           <div class="col-md-12">
-            <h1 class="page-title">Post you Ads</h1>
+            <h1 class="page-title">Post your Ads</h1>
           </div>
         </div>
       </div>
@@ -141,21 +141,63 @@
                   <h2 class="title-2">Ad Detail</h2>
                   <div class="dashboard-wrapper">
                     <div class="form-group mb-3">
-                      <label class="control-label">Project Title</label>
+                      <label class="control-label">Ad Title</label>
+                      <input class="form-control input-md" name="Title" placeholder="Title" type="text">
+                    </div>
+                    <div class="form-group mb-3">
+                      <label class="control-label">Ad Description</label>
                       <input class="form-control input-md" name="Title" placeholder="Title" type="text">
                     </div>
                     <div class="form-group mb-3 tg-inputwithicon">
-                      <label class="control-label">Categories</label>
+                      <label class="control-label">Category</label>
                       <div class="tg-select form-control">
                         <select>
-                          <option value="none">Select Categories</option>
-                          <option value="none">Mobiles</option>
+                          <option value="none">Select Category</option>
+                          <option value="none">Funiture</option>
+                          <option value="none">Mobile phones </option>
                           <option value="none">Electronics</option>
-                          <option value="none">Training</option>
                           <option value="none">Real Estate</option>
-                          <option value="none">Services</option>
-                          <option value="none">Training</option>
-                          <option value="none">Vehicles</option>
+                          <option value="none">Land</option>
+                          <option value="none">Cars</option>
+                          <option value="none">Home Appliances</option>
+                        
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 tg-inputwithicon">
+                      <label class="control-label"> Sub Category</label>
+                      <div class="tg-select form-control">
+                        <select>
+                          <option value="none">Select Subcategory</option>
+                          <option value="none">Samsung phones</option>
+                          <option value="none">fridges</option>
+                          <option value="none">Beds</option>
+                          <option value="none">Bikes</option>
+                          <option value="none">To let</option>
+                          <option value="none">For sale</option>
+                          <option value="none">Iphones</option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 tg-inputwithicon">
+                      <label class="control-label">Item Condition</label>
+                      <div class="tg-select form-control">
+                        <select>
+                          <option value="none">Select Condition</option>
+                          <option value="none">New</option>
+                          <option value="none">Refubrished</option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 tg-inputwithicon">
+                      <label class="control-label">Delivery Option</label>
+                      <div class="tg-select form-control">
+                        <select>
+                          <option value="none">Delivery</option>
+                          <option value="none">Pick up</option>
                         </select>
                         <i class="fas fa-angle-down"></i>
                       </div>
@@ -163,13 +205,25 @@
                     <div class="form-group mb-3">
                       <label class="control-label">Price Title</label>
                       <input class="form-control input-md" name="price" placeholder="Ad your Price" type="text">
-                      <div class="tg-checkbox mt-3">
+                      <div class="tg-checkbox mb-3">
                         <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="tg-priceoncall">
-                          <label class="custom-control-label" for="tg-priceoncall">Price On Call</label>
+                          <input type="checkbox" class="custom-control-input" id="tg-delivery">
+                          <label class="custom-control-label" for="tg-delivery">Delivery</label>
+                        </div>
+                      </div>
+                      <div class="tg-checkbox mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="tg-pickup">
+                          <label class="custom-control-label" for="tg-pickup">Pick Up</label>
                         </div>
                       </div>
                     </div>
+                    <!-- <div class="tg-checkbox mb-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tg-agreetermsandrules">
+                        <label class="custom-control-label" for="tg-agreetermsandrules">I agree to all <a href="javascript:void(0);">Terms of Use &amp; Posting Rules</a></label>
+                      </div>
+                    </div> -->
                     <div class="form-group md-3">
                       <section id="editor">
                         <div id="summernote">
@@ -180,7 +234,7 @@
                       <span>Drop files anywhere to upload</span>
                       <span>Or</span>
                       <span class="btn btn-common">Select Files</span>
-                      <span>Maximum upload file size: 500 KB</span>
+                      <span>Maximum upload file size:5mb</span>
                       <input id="tg-photogallery" class="tg-fileinput" type="file" name="file">
                     </label>
                   </div>
@@ -240,17 +294,17 @@
                         </div>
                       </div>
                       <div class="form-group mb-3 tg-inputwithicon">
-                        <label class="control-label">State</label>
+                        <label class="control-label">County</label>
                         <div class="tg-select form-control">
                           <select>
-                            <option value="none">Select State</option>
-                            <option value="none">Select State</option>
-                            <option value="none">Select State</option>
+                            <option value="none">County 1</option>
+                            <option value="none">County 2</option>
+                            <option value="none">County 3</option>
                           </select>
                           <i class="fas fa-angle-down"></i>
                         </div>
                       </div>
-                      <div class="form-group mb-3 tg-inputwithicon">
+                      <!-- <div class="form-group mb-3 tg-inputwithicon">
                         <label class="control-label">City</label>
                         <div class="tg-select form-control">
                           <select>
@@ -260,7 +314,7 @@
                           </select>
                           <i class="fas fa-angle-down"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="tg-checkbox mb-2">
                         <div class="custom-control custom-checkbox">
                           <input type="checkbox" class="custom-control-input" id="tg-agreetermsandrules">
